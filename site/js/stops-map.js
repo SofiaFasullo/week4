@@ -30,19 +30,25 @@ function makeStopFeature(stop) {
 }
 
 function showStopsOnMap(stopsToShow, stopMap) {
+  if (stopMap.stopLayers !== undefined) {
+    stopMap.removeLayer(stopMap.stopLayers);
+  }
+
   const stopFeatureCollection = {
     "type": "FeatureCollection",
     "features": stopsToShow.map(makeStopFeature),
   };
-
-  L.geoJSON(stopFeatureCollection, {
+  //naming this layer so we can keep track of it and refresh searches
+  stopMap.stopLayers = L.geoJSON(stopFeatureCollection, {
     pointToLayer: (geoJsonPoint, latlng) => L.circleMarker(latlng),
     style: {
       stroke: null,
       fillOpacity: 0.9,
       radius: 3,
     },
-  }).addTo(stopMap);
+  })
+  .bindTooltip(l => l.feature.properties['stop_name']) //. is like pipe operator, adding hover feature showing stop name
+  .addTo(stopMap);
 }
 
 export {

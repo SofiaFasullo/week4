@@ -9,33 +9,47 @@
   </head>
 
   <body>
-    <h1>Transit Stops in University City</h1>
 
-    <div id="stop-map"></div>
-    <label><input type="checkbox" class="route-checkbox" value="21"> Route 21</label>
-    <label><input type="checkbox" class="route-checkbox" value="21"> Route 21</label>
-    <label><input type="checkbox" class="route-checkbox" value="42"> Route 42</label>
-    <label><input type="checkbox" class="route-checkbox" value="31"> Route 31</label>
-    <label><input type="checkbox" class="route-checkbox" value="49"> Route 49</label>
-    <label><input type="checkbox" class="route-checkbox" value="LUCYGR"> Route LUCYGR</label>
-    <label><input type="checkbox" class="route-checkbox" value="LUCYGO"> Route LUCYGO</label>
-    <label><input type="checkbox" class="route-checkbox" value="MFL"> Route MFL</label>
-    <label><input type="checkbox" class="route-checkbox" value="30"> Route 30</label>
-    <label><input type="checkbox" class="route-checkbox" value="78"> Route 78</label>
-    <label><input type="checkbox" class="route-checkbox" value="40"> Route 40</label>
-    <label><input type="checkbox" class="route-checkbox" value="124"> Route 124</label>
-    <label><input type="checkbox" class="route-checkbox" value="125"> Route 125</label>
-    <label><input type="checkbox" class="route-checkbox" value="44"> Route 44</label>
-    <label><input type="checkbox" class="route-checkbox" value="62"> Route 62</label>
-    <label><input type="checkbox" class="route-checkbox" value="9"> Route 9</label>
-    <label><input type="checkbox" class="route-checkbox" value="11"> Route 11</label>
-    <label><input type="checkbox" class="route-checkbox" value="13"> Route 13</label>
-    <label><input type="checkbox" class="route-checkbox" value="34"> Route 34</label>
-    <label><input type="checkbox" class="route-checkbox" value="36"> Route 36</label>
-    <label><input type="checkbox" class="route-checkbox" value="10"> Route 10</label>
-    <label><input type="checkbox" class="route-checkbox" value="MFO"> Route MFO</label>
+    <div>
+      <h1>Transit Stops in University City</h1>
+    </div>
+
+    <div class = "content-container">
+      <div class = "map-container">
+        <div id="stop-map"></div>
+      </div>
+      <div class = "list-container">
+        
+        <label><input type="checkbox" class="route-checkbox" value="21"> Route 21</label>
+        <label><input type="checkbox" class="route-checkbox" value="21"> Route 21</label>
+        <label><input type="checkbox" class="route-checkbox" value="42"> Route 42</label>
+        <label><input type="checkbox" class="route-checkbox" value="31"> Route 31</label>
+        <label><input type="checkbox" class="route-checkbox" value="49"> Route 49</label>
+        <label><input type="checkbox" class="route-checkbox" value="LUCYGR"> Route LUCYGR</label>
+        <label><input type="checkbox" class="route-checkbox" value="LUCYGO"> Route LUCYGO</label>
+        <label><input type="checkbox" class="route-checkbox" value="MFL"> Route MFL</label>
+        <label><input type="checkbox" class="route-checkbox" value="30"> Route 30</label>
+        <label><input type="checkbox" class="route-checkbox" value="78"> Route 78</label>
+        <label><input type="checkbox" class="route-checkbox" value="40"> Route 40</label>
+        <label><input type="checkbox" class="route-checkbox" value="124"> Route 124</label>
+        <label><input type="checkbox" class="route-checkbox" value="125"> Route 125</label>
+        <label><input type="checkbox" class="route-checkbox" value="44"> Route 44</label>
+        <label><input type="checkbox" class="route-checkbox" value="62"> Route 62</label>
+        <label><input type="checkbox" class="route-checkbox" value="9"> Route 9</label>
+        <label><input type="checkbox" class="route-checkbox" value="11"> Route 11</label>
+        <label><input type="checkbox" class="route-checkbox" value="13"> Route 13</label>
+        <label><input type="checkbox" class="route-checkbox" value="34"> Route 34</label>
+        <label><input type="checkbox" class="route-checkbox" value="36"> Route 36</label>
+        <label><input type="checkbox" class="route-checkbox" value="10"> Route 10</label>
+        <label><input type="checkbox" class="route-checkbox" value="MFO"> Route MFO</label>
+        <input type="text" id="stop-name-input" placeholder="Enter stop name...">
+        <ul id="stop-list"></ul> <!--ul means unordered list-->
+      </div>
+    </div>
+
 
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
     <script src="js/main.js" type="module"></script>
+  
   </body>
 </html>
